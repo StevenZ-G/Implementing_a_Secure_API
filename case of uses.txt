@@ -1,0 +1,26 @@
+Run in CMD 
+------------------------------------
+
+curl -X POST -H "Content-Type: application/json" -d "{\"username\": \"admin2\", \"password\": \"esde1234\", \"rol_id\": 1}" -v http://localhost:5000/register
+
+curl -X POST -H "Content-Type: application/json" -d "{\"username\": \"admin2\", \"password\": \"esde1234\"}" -v http://localhost:5000/login
+
+curl -v http://localhost:5000/products -u admin2:esde1234
+
+curl -v http://localhost:5000/product/1 -u admin2:esde1234
+
+curl --header "Content-Type: application/json" --request POST --data "{\"name\": \"Product 4\"}" -v http://localhost:5000/product -u admin2:esde1234
+
+curl --header "Content-Type: application/json" --request PUT --data "{\"name\": \"Updated Product 2\"}" -v http://localhost:5000/product/2 -u admin2:esde1234
+
+curl --request DELETE -v http://localhost:5000/product/4 -u admin2:esde1234
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+curl -X POST -H "Content-Type: application/json" -d "{\"username\": \"customer2\", \"password\": \"esde1234\", \"rol_id\": 2}" -v http://localhost:5000/register
+
+curl -X POST -H "Content-Type: application/json" -d "{\"username\": \"customer2\", \"password\": \"esde1234\"}" -v http://localhost:5000/login
+
+curl -v http://localhost:5000/products -u customer2:esde1234
+
+curl -v http://localhost:5000/product/1 -u customer2:esde1234
