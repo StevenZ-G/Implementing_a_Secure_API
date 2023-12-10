@@ -4,21 +4,22 @@ Implement each one of the layers: Rate-Limiting, Authentication, Audit Log, and 
 ## Instalación
 
 You can install this project using this comand
-
-'''bash
+```bash
 git clone https://github.com/StevenZ-G/Implementing_a_Secure_API.git
 cd Implementing_a_Secure_API
+```
 
 Now, create the enviroment and activate the enviroment
 
-'''bash
+```bash
 conda env create --file environment.yml
 conda activate apidb
+```
 
 Now is time to run the app
 
-'''bash
+```bash
 python trial.py
-
+```
 ## Use 
 Now you can try to create and user and visualice the functions for each user (admin and customer) using the comands inside 'case_of_uses.txt' 
